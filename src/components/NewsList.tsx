@@ -64,6 +64,9 @@ const NewsList = () => {
         <Tab.Container defaultActiveKey="first">
           <Row>
               <Nav variant="pills" className="flex-row gap-2 justify-content-center">
+                    <Nav.Item> 
+                          <Nav.Link eventKey='default'>All news</Nav.Link>
+                      </Nav.Item>
                   {categories.map(item => {
                       return <Nav.Item key={item.id} onClick={FilterByCategory}> 
                           <Nav.Link eventKey={item.id}>{item.name}</Nav.Link>
@@ -73,14 +76,14 @@ const NewsList = () => {
           </Row>
           <Row >
               <Tab.Content>
-                  <Tab.Pane eventKey="first">
+                  <Tab.Pane eventKey="default">
                   <div className="card-container" >
                       {newsList.splice(0,6).map(newsItem => {
                       return <NewsCard key={newsItem.id} item={newsItem} categories={categories}/>
                       })}
 
                   </div>
-                  <Button size="lg" style={{backgroundColor: '#ff7c16', borderColor: '#ff7c16'}}>View All News</Button>{' '}
+                  <Button size="lg" className="btn-orange">View All News</Button>{' '}
 
                   </Tab.Pane>
               </Tab.Content>

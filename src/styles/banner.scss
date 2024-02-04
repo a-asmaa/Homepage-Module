@@ -1,0 +1,52 @@
+
+@import './variables.scss';
+.carousel.slide{
+    padding: 0 50px;
+}
+.carousel-inner{
+    .carousel-item{
+    height: 500px;
+
+    .carousel-caption{
+        color: #181E4B !important;
+        text-align: left;
+        position: static;
+
+
+        .banner-category{
+            font-weight: bold;
+            margin-bottom: 24px;
+        }
+        
+        h1{
+            font-size: 75px;
+            color: #181E4B;
+            font-weight: bold;
+        }
+
+        &p{
+            font-size: 16px;
+            color: $base-color;
+
+        }
+
+    }
+    }  
+}
+
+.carousel-indicators{
+    align-items: center !important;
+    justify-content: left !important;
+    margin-left: 0;
+    
+    button{
+        border-radius: 50%;
+        width: 30px !important;
+        height: 30px !important;
+        background-color: #181E4B !important;
+    }
+    button.active{
+        width: 40px !important;
+        height: 40px !important;
+    }
+}
