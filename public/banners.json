@@ -1,0 +1,17 @@
+{
+    "slides": [
+      
+        {
+            "id": 1,
+            "brief": "Link Development, the global technology solutions provider and an A15 company, unveiled today that it has recently marked its Silver Jubilee anniversary.",
+            "order": 3,
+            "title": "25 Years of Business Growth",
+            "imgUrl": "./banner1-img.png",
+            "itemUrl": "https://www.google.com",
+            "category": "Marking",
+            "videoUrl": "",
+            "colorCode": "F215B6"
+        }
+      
+    ]
+}
