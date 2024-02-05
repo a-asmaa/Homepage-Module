@@ -1,0 +1,82 @@
+@import './variables.scss';
+.things-do-section{
+    position: relative;
+    background-color: #efefef;
+    height: 542px;
+
+    .text-img{
+        position: absolute;
+        top: 0;
+        left: -106px;
+    }
+
+    .section-container{
+        position: relative;
+    }
+
+    .section-content{
+        z-index: 10;
+        position: absolute;
+        right: 50px;
+        top: 85px;
+        display: flex;
+        flex-direction: column;
+        text-align: right;
+        gap: 2rem;
+
+
+        p{
+            color: white;
+            font-size: 28px;
+        }
+
+        h1{
+            color: $blue-color;
+            font-weight: bold;
+            font-size: 55px;
+          
+        }
+    }
+
+    .img-container{
+        position: absolute;
+
+
+        img{
+            width: 250px;
+            height: 250px;
+            position: relative;
+
+        }
+
+        .text{
+            position: absolute;
+            color: white;
+            font-size: 25px;
+            font-weight: bolder;
+            z-index: 10;
+        }
+    }
+ 
+
+    .pink-img{
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    
+
+    .nav-link{
+        color: $base-color;
+        background-color: $gray-color;
+
+        &:hover{
+            color: #14183E;
+        }
+        &.active{
+            background-color: $blue-light-color !important;
+        }
+    }
+    
+}
