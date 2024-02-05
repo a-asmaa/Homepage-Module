@@ -66,7 +66,7 @@ const NewsList = () => {
     }
 
 
-    return ( <section className="news-section">
+    return ( <section id="news" className="news-section">
     
 
         <div className="media-text"> Media </div>

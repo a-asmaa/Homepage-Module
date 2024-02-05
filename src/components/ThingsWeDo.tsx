@@ -2,11 +2,11 @@ import '../styles/thingsWeDo.scss'
 import textImg from '../assets/Things _We Do.png';
 import pinkPath from '../assets/Pink-path.png';
 import { Stack } from 'react-bootstrap';
-import services from '../assets/services.png';
-import dynamics from '../assets/dynamics.png';
+import services from '../assets/Services.png';
+import dynamics from '../assets/Dynamic365.png';
 import transformation from '../assets/Transformation.png';
-import envision from '../assets/envision.png';
-import craftyMind from '../assets/crafty-mind.png';
+import envision from '../assets/Enovision.png';
+import craftyMind from '../assets/CarftyMind.png';
 
 
 const ThingsWeDo = () => {
@@ -27,7 +27,7 @@ const ThingsWeDo = () => {
 
                 <div className='section-content' style={{height: 'fit-content'}}>
                     <div className='img-container'>
-                        <img src={transformation} alt="things_we_do"/>
+                        <img src={craftyMind} alt="things_we_do"/>
 
                         <Stack direction="horizontal" gap={3} className='read-more'>
                             <i className="bi bi-arrow-right"></i>
@@ -35,7 +35,7 @@ const ThingsWeDo = () => {
                         </Stack> 
                     </div>
                     <div className='img-container'>
-                        <img src={transformation} alt="things_we_do"/>
+                        <img src={services} alt="things_we_do"/>
 
                         <Stack direction="horizontal" gap={3} className='read-more'>
                             <i className="bi bi-arrow-right"></i>
@@ -48,7 +48,7 @@ const ThingsWeDo = () => {
                 <div className='section-content' >
                     <div style={{height: 50}}></div>
                     <div className='img-container' >
-                        <img src={transformation} alt="things_we_do"/>
+                        <img src={envision} alt="things_we_do"/>
 
                         <Stack direction="horizontal" gap={3} className='read-more'>
                             <i className="bi bi-arrow-right"></i>
@@ -56,7 +56,7 @@ const ThingsWeDo = () => {
                         </Stack> 
                     </div>
                     <div className='img-container' >
-                        <img src={transformation} alt="things_we_do"/>
+                        <img src={dynamics} alt="things_we_do"/>
 
                         <Stack direction="horizontal" gap={3} className='read-more'>
                             <i className="bi bi-arrow-right"></i>
