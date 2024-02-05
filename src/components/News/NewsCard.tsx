@@ -1,6 +1,6 @@
 import React from 'react'
-import { Badge, Card } from 'react-bootstrap'
-import { Category, NewsType } from '../types/newsItem'
+import { Card } from 'react-bootstrap'
+import { Category, NewsType } from '../../types/newsItem'
 
 
 export default function NewsCard({item, categories}: {item: NewsType, categories: Category[]}) {
@@ -22,13 +22,11 @@ export default function NewsCard({item, categories}: {item: NewsType, categories
             <div className='px-3' style={{backgroundColor: "#74747433", borderRadius: 10}}>{categories.find(x => x.id == parseInt(item.categoryID))?.name}</div>
             <div className="d-flex gap-2">
                    
-                
-                
-                    { true ?  
-                        <i className="bi bi-heart" style={{color: '#13BEFF'}}></i> :
-                        <i className="bi bi-heart-fill"></i> 
-                    }
-                 <i className="bi bi-share-fill" style={{color: '#13BEFF'}}></i> 
+              { true ?  
+                  <i className="bi bi-heart" style={{color: '#13BEFF'}}></i> :
+                  <i className="bi bi-heart-fill"></i> 
+              }
+              <i className="bi bi-share-fill" style={{color: '#13BEFF'}}></i> 
             </div> 
         </div>
     </Card.Body>
