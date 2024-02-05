@@ -3,6 +3,7 @@ import { Banner } from "../../types/banner";
 import { Carousel, Spinner, } from "react-bootstrap";
 import BannerCard from "./BannerCard";
 import '../../styles/banner.scss'
+import Decore from '../../assets/Decore.svg';
 
 const Banners = () => {
 
@@ -38,6 +39,8 @@ const Banners = () => {
             loading ?  
                 <Spinner  /> 
             : 
+            <>
+                <img src={Decore}  alt="logo" className="decore"/>
                 <Carousel> 
                     {banners.map(banner => {
                         return  <Carousel.Item key={banner.id}>
@@ -47,6 +50,8 @@ const Banners = () => {
                     </Carousel.Item>
                     })}
                 </Carousel>
+            </>
+               
         }
     </section> );
 }

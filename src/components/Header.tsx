@@ -1,20 +1,19 @@
 import { Button, Container, Form, Nav, Navbar, NavbarCollapse } from "react-bootstrap";
 import logo from '../assets/Logo.png';
-import Decore from '../assets/Decore.svg';
 import '../styles/header.scss'
 
 const Header = () => {
     return ( <header className="container">
 
         <img src={logo}  alt="logo"/>
-        <img src={Decore}  alt="logo" className="decore"/>
 
         <Navbar collapseOnSelect expand='sm'>
             <Container >
                 <Navbar.Toggle />
-                <NavbarCollapse>
+                <NavbarCollapse >
                     <Nav
                         activeKey="/home"
+                        
                     >
                         <Nav.Item>
                             <Nav.Link href="/">Home</Nav.Link>
@@ -23,7 +22,7 @@ const Header = () => {
                             <Nav.Link eventKey="about">About us</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link eventKey="news">News</Nav.Link>
+                            <Nav.Link href="#news">News</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
                             <Nav.Link eventKey="contact">

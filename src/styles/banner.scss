@@ -3,6 +3,14 @@
 
 .banner-container{
     min-height: 600px;
+
+    .decore{
+
+        position: absolute;
+        right: -230px;
+        top: -355px;
+    
+    }
 }
 
 .carousel.slide{
@@ -22,7 +30,30 @@
             padding-top: 0;
             padding-bottom: 0;
 
+            .banner-card{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
 
+                @media only screen and (min-width: 992px){
+                    flex-direction: row;
+                    
+                }
+            }
+
+            .vector-img{
+                display: none;
+
+                @media only screen and (min-width: 992px){
+                    top: 30%;  
+                    position: absolute;
+                    right: 50%;
+                    display: block;
+                    z-index: 0;
+                }
+            }
+           
             .banner-category{
                 font-weight: bold;
                 margin-bottom: 24px;
@@ -45,6 +76,7 @@
                 height: 90px;
                 font-weight: 500;
                 max-width: 460px;
+                
             }
 
         }
@@ -54,7 +86,9 @@
 .carousel-indicators{
     align-items: center !important;
     justify-content: left !important;
-    margin-left: 0;
+    margin-left: 101px !important ;
+    gap: 6rem;
+    margin-top: 10px;
     
     button{
         border-radius: 50%;

@@ -7,13 +7,13 @@ import vector from "../../assets/Vector.svg";
 const BannerCard = ({banner}: {banner: Banner}) => {
    
     return ( 
-        <div className="d-flex justify-content-center">
-            <div className="py-5" style={{width: 600}}>
+        <div className="banner-card">
+            <div className="pt-3 py-5" style={{width: 600}}>
                 <h5 className="banner-category" style={{color: `#${banner.colorCode}`}}> {banner.category} </h5>
                 <h1>{banner.title}</h1>
                 <p>{banner.brief} </p>
 
-                <img style={{position: 'absolute', top: '30%', right: '50%', zIndex: 0}} src={vector}  alt="vector"/>
+                <img className="vector-img" src={vector}  alt="vector"/>
 
                 {/* TODO: link to urls / actions  */}
                 <Stack direction="horizontal" gap={2} className="mt-5">
